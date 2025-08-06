@@ -1,22 +1,32 @@
 {
-  "name": "ems-server",
+  "name": "auth",
   "version": "1.0.0",
-  "description": "Employee Management System backend",
-  "main": "server/src/index.js",
-  "type": "module",
-  "scripts": {
-    "dev": "nodemon server/src/index.js",
-    "start": "node server/src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "",
   "keywords": [],
-  "author": "",
+  "homepage": "https://github.com/AhzamSyed/EMS#readme",
+  "bugs": {
+    "url": "https://github.com/AhzamSyed/EMS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhzamSyed/EMS.git"
+  },
   "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "backend/index.js",
+  "scripts": {
+    "dev": "nodemon backend/index.js"
+  },
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.0",
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "crypto": "^1.0.1",
+    "dotenv": "^17.2.1",
     "express": "^5.1.0",
-    "mongoose": "^8.16.4"
+    "jsonwebtoken": "^9.0.2",
+    "mailtrap": "^4.2.0",
+    "mongoose": "^8.16.5"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
