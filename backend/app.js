@@ -2,6 +2,7 @@ import express from "express";
 import authRoutes from "./Routes/Auth.route.js";
 
 const app = express();
+
 app.use(express.json());
 
 // Routes

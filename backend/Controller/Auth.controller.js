@@ -1,9 +1,9 @@
 import { asyncHandler } from "./Middleware/Asynchandler.js";
-import { signupSchema, verifyEmailSchema } from "../Validators/Authvalidator.js";
+import { signupSchema } from "../Validators/Authvalidator.js";
 import { User } from "../Models/User.model.js";
 import bcryptjs from "bcryptjs";
 import { generateTokenAndSetCookie } from "../Utils/GenerateTokenAndSetCookie.js";
-import { sendVerificationEmail, sendWelcomeEmail } from "../Mailtrap/Emails.js";
+import { sendVerificationEmail } from "../Mailtrap/Emails.js";
 
 
 export const signup = asyncHandler(async (req, res) => {
